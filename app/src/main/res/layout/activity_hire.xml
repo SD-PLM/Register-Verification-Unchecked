@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HireActivity">
+
+    <EditText
+        android:id="@+id/edtTextHName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtTextPW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/edtTextHName"
+        app:layout_constraintStart_toStartOf="@+id/edtTextHName"
+        app:layout_constraintTop_toBottomOf="@+id/edtTextHName" />
+
+    <EditText
+        android:id="@+id/edtTextCPW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/edtTextPW"
+        app:layout_constraintStart_toStartOf="@+id/edtTextPW"
+        app:layout_constraintTop_toBottomOf="@+id/edtTextPW" />
+
+    <EditText
+        android:id="@+id/edtTextRole"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="Role"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/edtTextCPW"
+        app:layout_constraintStart_toStartOf="@+id/edtTextCPW"
+        app:layout_constraintTop_toBottomOf="@+id/edtTextCPW" />
+
+    <TextView
+        android:id="@+id/txtUID"
+        android:layout_width="202dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="50dp"
+        android:text="User ID"
+        android:textAlignment="center"
+        android:textSize="29sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/edtTextRole"
+        app:layout_constraintStart_toStartOf="@+id/edtTextRole"
+        app:layout_constraintTop_toBottomOf="@+id/edtTextRole" />
+
+    <Button
+        android:id="@+id/btnGenID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Generate ID"
+        app:layout_constraintEnd_toEndOf="@+id/txtUID"
+        app:layout_constraintStart_toStartOf="@+id/txtUID"
+        app:layout_constraintTop_toBottomOf="@+id/txtUID" />
+
+    <Button
+        android:id="@+id/btnConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Register"
+        app:layout_constraintEnd_toEndOf="@+id/btnGenID"
+        app:layout_constraintStart_toStartOf="@+id/btnGenID"
+        app:layout_constraintTop_toBottomOf="@+id/btnGenID" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

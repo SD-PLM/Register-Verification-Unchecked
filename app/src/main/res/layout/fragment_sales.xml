@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#8F2424"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:layout_editor_absoluteY="56dp">
+
+    <ImageButton
+        android:id="@+id/tropangmaramihan"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/content_desc_tropang_maramihan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tropang_maramihan" />
+
+    <ImageButton
+        android:id="@+id/tropangbisdak"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/content_desc_tropang_bisdak"
+        app:layout_constraintStart_toEndOf="@+id/tropangmaramihan"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tropang_bisdak" />
+
+    <ImageButton
+        android:id="@+id/barkadahan1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/content_desc_barkadahan_1"
+        app:layout_constraintStart_toEndOf="@+id/tropangbisdak"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/barkadahan_one" />
+
+    <ImageButton
+        android:id="@+id/olaahpaella"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/content_desc_olaaah_paella"
+        app:layout_constraintStart_toEndOf="@+id/barkadahan1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/olaaah_paella" />
+
+    <ImageButton
+        android:id="@+id/olaalaah"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/content_desc_olaalaah"
+        app:layout_constraintStart_toEndOf="@+id/olaahpaella"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/olaalaah" />
+
+    <ImageButton
+        android:id="@+id/olaalaahb"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/content_desc_olaalaah_b"
+        app:layout_constraintStart_toStartOf="@+id/tropangmaramihan"
+        app:layout_constraintTop_toBottomOf="@+id/tropangmaramihan"
+        app:srcCompat="@drawable/olaalaah_b" />
+
+    <ImageButton
+        android:id="@+id/pamilyangbisdak"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/content_desc_pamilyang_bisdak"
+        app:layout_constraintStart_toStartOf="@+id/tropangbisdak"
+        app:layout_constraintTop_toBottomOf="@+id/tropangbisdak"
+        app:srcCompat="@drawable/pamilyang_bisdak" />
+
+    <ImageButton
+        android:id="@+id/olaaahbisdak"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/content_desc_olaaah_bisdak"
+        app:layout_constraintStart_toStartOf="@+id/barkadahan1"
+        app:layout_constraintTop_toBottomOf="@+id/barkadahan1"
+        app:srcCompat="@drawable/olaaah_bisdak" />
+
+    <ImageButton
+        android:id="@+id/bisdakmeatup"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/content_desc_bisdak_meat_up"
+        app:layout_constraintStart_toStartOf="@+id/olaahpaella"
+        app:layout_constraintTop_toBottomOf="@+id/olaahpaella"
+        app:srcCompat="@drawable/bisdak_meat_up" />
+
+    <ImageButton
+        android:id="@+id/barkadahan2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/content_desc_barkadahan_2"
+        app:layout_constraintStart_toEndOf="@+id/bisdakmeatup"
+        app:layout_constraintTop_toBottomOf="@+id/olaalaah"
+        app:srcCompat="@drawable/barkadahan_two" />
+
+    <ImageButton
+        android:id="@+id/bisdakspecial"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/content_desc_bisdak_special"
+        app:layout_constraintStart_toStartOf="@+id/olaalaahb"
+        app:layout_constraintTop_toBottomOf="@+id/olaalaahb"
+        app:srcCompat="@drawable/bisdak_special" />
+
+    <ImageButton
+        android:id="@+id/tropangbisdakb"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/content_desc_tropang_bisdak_b"
+        app:layout_constraintStart_toStartOf="@+id/pamilyangbisdak"
+        app:layout_constraintTop_toBottomOf="@+id/pamilyangbisdak"
+        app:srcCompat="@drawable/tropang_bisdak_b" />
+
+    <ImageButton
+        android:id="@+id/barkadahan1b"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/content_desc_barkadahan_1_b"
+        app:layout_constraintStart_toStartOf="@+id/olaaahbisdak"
+        app:layout_constraintTop_toBottomOf="@+id/olaaahbisdak"
+        app:srcCompat="@drawable/barkadahan_one_b" />
+
+    <ImageButton
+        android:id="@+id/barkadahan2b"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/content_desc_barkadahan_2_b"
+        app:layout_constraintStart_toStartOf="@+id/bisdakmeatup"
+        app:layout_constraintTop_toBottomOf="@+id/bisdakmeatup"
+        app:srcCompat="@drawable/barkadahan_two_b" />
+
+    <ImageButton
+        android:id="@+id/barkadahan3"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/content_desc_barkadahan_3"
+        app:layout_constraintStart_toStartOf="@+id/barkadahan2"
+        app:layout_constraintTop_toBottomOf="@+id/barkadahan2"
+        app:srcCompat="@drawable/barkadahan_three" />
+
+    <ImageButton
+        android:id="@+id/bisdak_meat_up_b"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/content_desc_bisdak_meat_up_b"
+        app:layout_constraintStart_toStartOf="@+id/bisdakspecial"
+        app:layout_constraintTop_toBottomOf="@+id/bisdakspecial"
+        app:srcCompat="@drawable/bisdak_meat_up_b" />
+
+    <ImageButton
+        android:id="@+id/olaaah_paella_b"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/content_desc_olaaah_paella_b"
+        app:layout_constraintStart_toStartOf="@+id/tropangbisdakb"
+        app:layout_constraintTop_toBottomOf="@+id/tropangbisdakb"
+        app:srcCompat="@drawable/olaaah_paella_b" />
+
+    <ImageButton
+        android:id="@+id/pamilyang_bisdak_b"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/content_desc_pamilyang_bisdak_b"
+        app:layout_constraintStart_toStartOf="@+id/barkadahan1b"
+        app:layout_constraintTop_toBottomOf="@+id/barkadahan1b"
+        app:srcCompat="@drawable/pamilyang_bisdak_b" />
+
+    <ImageButton
+        android:id="@+id/olaaah_bisdak_b"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/content_desc_olaaah_bisdak_b"
+        app:layout_constraintStart_toStartOf="@+id/barkadahan2b"
+        app:layout_constraintTop_toBottomOf="@+id/barkadahan2b"
+        app:srcCompat="@drawable/olaaah_bisdak_b" />
+
+    <ImageButton
+        android:id="@+id/bisdak_special_b"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/content_desc_bisdak_special_b"
+        app:layout_constraintStart_toStartOf="@+id/barkadahan3"
+        app:layout_constraintTop_toBottomOf="@+id/barkadahan3"
+        app:srcCompat="@drawable/bisdak_special_b" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

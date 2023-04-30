@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">BigroyPOS</string>
+    <string name="menu_Open">Open</string>
+    <string name="menu_Close">Close</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="content_desc_olaalaah">olaalaah</string>
+    <string name="content_desc_tropang_bisdak">tropang bisdak</string>
+    <string name="content_desc_barkadahan_1">barkadahan 1</string>
+    <string name="content_desc_barkadahan_2">barkadahan 2</string>
+    <string name="content_desc_barkadahan_3">barkadahan 3</string>
+    <string name="content_desc_tropang_maramihan">tropang maramihan</string>
+    <string name="content_desc_bisdak_meat_up">bisdak meat up</string>
+    <string name="content_desc_olaaah_paella">olaaah paella</string>
+    <string name="content_desc_pamilyang_bisdak">pamilyang bisdak</string>
+    <string name="content_desc_olaaah_bisdak">olaaah bisdak</string>
+    <string name="content_desc_bisdak_special">bisdak special</string>
+    <string name="content_desc_olaalaah_b">olaalaah b</string>
+    <string name="content_desc_tropang_bisdak_b">tropang bisdak b</string>
+    <string name="content_desc_barkadahan_1_b">barkadahan 1 b</string>
+    <string name="content_desc_barkadahan_2_b">barkadahan 2 b</string>
+    <string name="content_desc_bisdak_meat_up_b">bisdak meat up b</string>
+    <string name="content_desc_olaaah_paella_b">olaaah paella b</string>
+    <string name="content_desc_pamilyang_bisdak_b">pamilyang bisdak b</string>
+    <string name="content_desc_olaaah_bisdak_b">olaaah bisdak b</string>
+    <string name="content_desc_bisdak_special_b">bisdak special b</string>
+</resources>
