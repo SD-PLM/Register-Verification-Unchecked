@@ -60,9 +60,22 @@ public class HireActivity extends AppCompatActivity {
                 id = txtUID.getText().toString();
                 role = txtRole.getText().toString();
                 confirmPassword = txtConfirm.getText().toString();
-                if (password.equals(confirmPassword)) { //if passwords match
-                    if (!(name.equals("") || password.equals("") || id.equals("") || role.equals(""))) { //if all fields are not null
-                        if (role.equals("Manager") || role.equals("Cashier")) { //TODO: change role to drop-down menu to remove this logic
+
+                if (password.equals(confirmPassword)) {//if passwords match
+                    if ( password.length()<8){ //if password doesn't meet length requirement
+                        Toast.makeText(HireActivity.this, "Password must contain at least 8 characters.",Toast.LENGTH_SHORT).show();
+                    }
+                    if(!(password.matches("(.*[A-Z].*)"))){ // if password doesn't have at least 1 upper case.
+                        Toast.makeText(HireActivity.this, "Password must contain at least 1 upper case.",Toast.LENGTH_SHORT).show();
+                    }
+                    if (!(password.matches("(.*[0-9].*)"))){ // if password doesn't have at least 1 number.
+                        Toast.makeText(HireActivity.this, "Password must contain at least 1 number.",Toast.LENGTH_SHORT).show();
+                    }
+                    if (!(password.matches("(!@#$%^&)_+-=*"))) { // if password doesn't have at least 1 symbol.
+                        Toast.makeText(HireActivity.this, "Password must contain at least 1 symbol.",Toast.LENGTH_SHORT).show();
+                    }
+                    if (((!( password.length()<8||name.equals("") || password.equals("") || id.equals("") || role.equals("")))&&password.matches("(.*[A-Z].*,.*[0-9].*,!@#$%^&*()_+)"))) { //if all fields are not null
+                        if (role.equalsIgnoreCase("Manager") || role.equalsIgnoreCase("Cashier")) { //TODO: change role to drop-down menu to remove this logic
                             Boolean insert = db.insertData(id, role, name, password);
                             if (insert) {
                                 Toast.makeText(HireActivity.this, "Successfully Added!", Toast.LENGTH_SHORT).show();
@@ -75,8 +88,11 @@ public class HireActivity extends AppCompatActivity {
                             Toast.makeText(HireActivity.this, "Invalid Role", Toast.LENGTH_SHORT).show();
                     } else //if any field is null
                         Toast.makeText(HireActivity.this, "Please Accomplish All Fields", Toast.LENGTH_SHORT).show();
+
                 } else // if passwords don't match
                     Toast.makeText(HireActivity.this, "Passwords do not Match", Toast.LENGTH_SHORT).show();
+
+
             }
         });
     }
