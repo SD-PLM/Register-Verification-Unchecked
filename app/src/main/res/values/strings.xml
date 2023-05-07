@@ -32,4 +32,6 @@
     <string name="content_desc_pamilyang_bisdak_b">pamilyang bisdak b</string>
     <string name="content_desc_olaaah_bisdak_b">olaaah bisdak b</string>
     <string name="content_desc_bisdak_special_b">bisdak special b</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
